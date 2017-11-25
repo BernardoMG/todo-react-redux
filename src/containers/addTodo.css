@@ -1,0 +1,13 @@
+/*Styles for addTodo container*/
+
+.addTodoContainer form {
+	 display: flex;
+}
+
+.addTodoContainer .input {
+	width: 70%;
+}
+
+.addTodoContainer .addTodoButton {
+	margin-left: auto;
+}
