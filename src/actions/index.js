@@ -23,3 +23,10 @@ export const toggleTodo = id => {
     id
   }
 }
+
+export const removeTodo = id => {
+  return {
+    type: types.REMOVE_TODO,
+    id
+  }
+}
