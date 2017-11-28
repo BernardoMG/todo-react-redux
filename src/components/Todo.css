@@ -1,0 +1,15 @@
+/*Styles for Todo component*/
+
+.itens {
+    max-width: 100%;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.ref-edit {
+    color: blue;
+}
+
+.ref-remove {
+    color: red;
+}
