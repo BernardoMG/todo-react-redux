@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 import { Checkbox } from 'semantic-ui-react'
 import './Todo.css'
 
-const Todo = ({ onClick, completed, text, onRemove }) => (
+const Todo = ({ onClick, completed, text, onRemove, onEdit }) => (
   <li className='itens'>
     <a onClick={onRemove} className='ref-remove'>
       <i className='remove icon' />
     </a>
-    <a href={''} className='ref-edit'>
+    <a onClick={onEdit} className='ref-edit'>
       <i className='edit icon' />
     </a>
     <Checkbox onClick={onClick} checked={completed} label={(
@@ -23,7 +23,8 @@ Todo.propTypes = {
   onClick: PropTypes.func.isRequired,
   completed: PropTypes.bool.isRequired,
   text: PropTypes.string.isRequired,
-  onRemove: PropTypes.func.isRequired
+  onRemove: PropTypes.func.isRequired,
+  onEdit: PropTypes.func.isRequired
 }
 
 export default Todo

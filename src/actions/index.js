@@ -30,3 +30,11 @@ export const removeTodo = id => {
     id
   }
 }
+
+export const editTodo = (id, text) => {
+  return {
+    type: types.EDIT_TODO,
+    id,
+    text
+  }
+}

@@ -21,6 +21,12 @@ const todos = (state = [], action) => {
       return state.filter(todo =>
         todo.id !== action.id
       )
+    case types.EDIT_TODO:
+      return state.map(todo =>
+        todo.id === action.id
+          ? { ...todo, text: action.text }
+          : todo
+      )
     default:
       return state
   }

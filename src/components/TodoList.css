@@ -5,3 +5,7 @@
     text-align: left;
     padding: 0;
 }
+
+#editButton {
+    margin-left: auto;
+}
