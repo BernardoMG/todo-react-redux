@@ -1,0 +1,14 @@
+/*Styles for addTodoForm component*/
+
+#form {
+	 display: flex;
+}
+
+#input {
+	width: 70%;
+}
+
+#addTodoButton {
+	margin-left: auto;
+	display: block;
+}

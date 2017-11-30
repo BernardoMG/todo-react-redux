@@ -17,6 +17,16 @@ const todos = (state = [], action) => {
           ? {...todo, completed: !todo.completed}
           : todo
       )
+    case types.REMOVE_TODO:
+      return state.filter(todo =>
+        todo.id !== action.id
+      )
+    case types.EDIT_TODO:
+      return state.map(todo =>
+        todo.id === action.id
+          ? { ...todo, text: action.text }
+          : todo
+      )
     default:
       return state
   }

@@ -1,0 +1,20 @@
+/*Styles for Todo component*/
+
+.itens {
+    max-width: 100%;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#todoLabel {
+    margin-left: 1%;
+}
+
+#checkbox {
+    margin-left: 1%;
+}
+
+#remove {
+    color: red;
+    margin-right: auto;
+}
