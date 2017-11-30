@@ -9,19 +9,7 @@ const TodoList = ({ todos, onTodoClick, onTodoRemove, onTodoEdit }) => (
       <Todo key={todo.id} {...todo}
         onClick={() => onTodoClick(todo.id)}
         onRemove={() => onTodoRemove(todo.id)}
-        onEdit={() => {
-          // document.querySelector('input[name=todo]').value = todo.text
-          // document.querySelector('.addTodoButton').style.display = 'none'
-          // let button = document.createElement('Button')
-          // button.className = 'ui button editButton'
-          // button.id = 'editButton'
-          // button.textContent = 'Edit'
-          // button.onclick = function () {
-          //   onTodoEdit(todo.id, document.querySelector('input[name=todo]').value)
-          // }
-          // button.type = 'submit'
-          // document.querySelector('.form').appendChild(button)
-        }}
+        onEdit={(text) => onTodoEdit(todo.id, text)}
       />
     ))}
   </ul>

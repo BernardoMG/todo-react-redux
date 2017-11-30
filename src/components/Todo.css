@@ -6,10 +6,15 @@
     word-break: break-all;
 }
 
-.ref-edit {
-    color: blue;
+#todoLabel {
+    margin-left: 1%;
 }
 
-.ref-remove {
+#checkbox {
+    margin-left: 1%;
+}
+
+#remove {
     color: red;
+    margin-right: auto;
 }
