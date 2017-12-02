@@ -15,6 +15,10 @@ const Footer = () => (
     <FilterLink filter='SHOW_COMPLETED'>
       Completed
     </FilterLink>
+    <Button.Or />
+    <FilterLink filter='SORT'>
+      <i className='sort icon' />
+    </FilterLink>
   </Button.Group>
 )
 

@@ -14,6 +14,8 @@ export const getVisibleTodos = createSelector(
         return todos.filter(t => t.completed)
       case types.SHOW_ACTIVE:
         return todos.filter(t => !t.completed)
+      default:
+        return 'Error while filtering'
     }
   }
 )
