@@ -15,7 +15,7 @@ const Footer = () => (
     <FilterLink filter='SHOW_COMPLETED'>
       Completed
     </FilterLink>
-    <Button.Or />
+    <Button.Or text='and' />
     <FilterLink filter='SORT'>
       <i className='sort icon' />
     </FilterLink>
